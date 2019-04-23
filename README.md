@@ -1,4 +1,4 @@
 # iOS-Emu
 iOS Emulators (iOS 11+)
 
-http://johan.margueritte.free.fr/iosemu
+https://weedyweedsmoker.github.io/iOS-Emu/
