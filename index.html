@@ -9,7 +9,7 @@
 @charset "UTF-8";
 body {
     font-family: source-sans-pro;
-    background-color: #f2f2f2;
+    background-color: #F2F2F2;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -23,6 +23,13 @@ body {
 }
 .container {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    background-color: #FFFFFF;
+}
+.contained {
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
@@ -49,7 +56,7 @@ body {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 </style>
 <script>var __adobewebfontsappname__="dreamweaver"</script>
@@ -62,233 +69,264 @@ body {
 <body>
 <div class="container">
   <p><img class="image" src="banner.png" height="100%" width="100%" alt=""/></p>
-  <h2><strong>Emulators for iOS 11 and above !</strong></h2>
-  <p>Including the working cores and all the required files to not boot to a black screen or a crash (because of a missing BIOS file)… 😄</p>
-  <p>If you're jailbroken, just add my repo to Cydia by clicking <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://johan.margueritte.free.fr/repo">this link</a> on your jailbroken device, <em>(<a href="sileo://source/http://johan.margueritte.free.fr/repo">this link</a> for Sileo)</em> or by adding this source to Cydia :&nbsp;http://johan.margueritte.free.fr/repo</p>
-  <hr>
-  <h3><strong>RetroArch 1.7.6 (iOS 11+)</strong> — Updated v4 with a new French translation (by me !) and complete international support !</h3>
-  <div class="align"><a href="http://www.mediafire.com/file/zt01iifqae8fr09/RetroArch_1.7.6v4.ipa/file" target="_blank" rel="nofollow noopener"><img src="retroarch.png" width="167" height="167" alt=""/><br>
-    RetroArch 1.7.6</a><br>
-    <a href="http://www.mediafire.com/file/2tnnz6drmurcu3y/RetroArch_Optional_Cores.zip/file" target="_blank" rel="nofollow noopener">Optional Cores</a></div>
-  <p><em>I couldn&rsquo;t compile the latest versions of desmume, easyrpg, gme, lutro, mame2003 and picodrive, so older ones were used in this case…</em></p>
-  <hr>
-  <p><strong>Install :</strong></p>
-  <p>To install on a non-jailbroken device, use Cydia Impactor (<a href="http://www.cydiaimpactor.com/" rel="nofollow noopener">http://www.cydiaimpactor.com</a>), you may have to re-install the .ipa every week if using a free account, or every year if using a paid developer account…</p>
-  <p>To install on a jailbroken device, just add my repo to Cydia by clicking <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://johan.margueritte.free.fr/repo">this link</a> on your jailbroken device, or by adding this source to Cydia :&nbsp;http://johan.margueritte.free.fr/repo<br>
-    Or you can unzip the “.ipa” file (rename to “.zip”), and install to “/Applications” via SFTP or Filza — then type “uicache” via SSH…</p>
-  <p><strong>ROMs :</strong></p>
-  <p>You can use an app like iFunBox or iExplorer to add ROMs to the app (Or Filza if you&rsquo;re jailbroken)…</p>
-  <p><em>I&rsquo;ve included the ROMs for Cave Story (NXEngine), DOOM (PrBoom), Out Run (Cannonball), Palm OS (Mu), and Rick Dangerous (xrick) inside the &ldquo;ROMs&rdquo; folder, you can use that folder as the Start folder, and add or remove contents to it directly…</em></p>
-  <p><strong>Optional Cores Install :</strong></p>
-  <p>To install the optional cores inside the app just using Cydia Impactor, you can unzip the ipa (rename it to .zip), inside the &ldquo;.app&rdquo; is a &ldquo;modules&rdquo; folder, just add the cores to this folder…</p>
-  <p>After that just make a zip of &ldquo;Payload&rdquo; and &ldquo;BundleMetadata.plist&rdquo; with your cores included, and rename it &ldquo;RetroArch 1.7.6.ipa&rdquo; !</p>
-  <p>If you&rsquo;re jailbroken, just add them via SFTP inside the &ldquo;modules&rdquo; folder in &ldquo;RetroArch.app&rdquo;…</p>
-  <hr>
-  <p><strong>Included cores :</strong></p>
-  <button class="collapsible">Expand</button>
-  <div class="content">
-    <ul>
-      <li><em>4do</em> (3DO)</li>
-      <li><em>81</em> (Sinclair ZX 81)</li>
-      <li><em>2048</em> (2048 game)</li>
-      <li><em>bluemsx</em> (MSX/SVI/ColecoVision/SG-1000)</li>
-      <li><em>bsnes_mercury_performance</em> (Super NES)</li>
-      <li><em>cannonball</em> (Out Run engine)</li>
-      <li><em>cap32</em> (Amstrad CPC)</li>
-      <li><em>desmume</em> (Nintendo DS)</li>
-      <li><em>dosbox</em> (MS-DOS)</li>
-      <li><em>easyrpg</em> (EasyRPG/Player)</li>
-      <li><em>fbalpha</em> (Arcade)</li>
-      <li><em>fuse</em> (Sinclair ZX Spectrum)</li>
-      <li><em>gambatte</em> (Game Boy)</li>
-      <li><em>genesis_plus_gx</em> (Sega 8/16 bit)</li>
-      <li><em>gme</em> (Game Music Emu)</li>
-      <li><em>gw</em> (Game &amp; Watch)</li>
-      <li><em>handy</em> (Atari Lynx)</li>
-      <li><em>hatari</em> (Atari ST/STE/TT/Falcon)</li>
-      <li><em>lutro</em> (lua game framework)</li>
-      <li><em>mame2003</em> (Arcade)</li>
-      <li><em>mednafen_ngp</em> (NeoGeo Pocket)</li>
-      <li><em>mednafen_pcfx</em> (PC-FX)</li>
-      <li><em>mednafen_psx</em> (Playstation)</li>
-      <li><em>mednafen_saturn</em> (Saturn)</li>
-      <li><em>mednafen_supergrafx</em> (PC Engine/Turbografx/CD)</li>
-      <li><em>mednafen_vb</em> (Virtual Boy)</li>
-      <li><em>mednafen_wswan</em> (WonderSwan)</li>
-      <li><em>mgba</em> (Game Boy Advance)</li>
-      <li><em>mrboom</em> (Bomberman clone)</li>
-      <li><em>mu</em> (Palm OS)</li>
-      <li><em>nestopia</em> (NES)</li>
-      <li><em>np2kai</em> (PC-98)</li>
-      <li><em>nxengine</em> (Cave Story engine)</li>
-      <li><em>o2em</em> (Odyssey 2/VideoPac)</li>
-      <li><em>pcsx_rearmed</em> (Playstation)</li>
-      <li><em>picodrive</em> (SEGA Mega Drive/Genesis/Master System/32x/CD)</li>
-      <li><em>pocketcdg</em> (Karaoke player)</li>
-      <li><em>pokemini</em> (Pokémon-Mini)</li>
-      <li><em>prboom</em> (DOOM engine)</li>
-      <li><em>prosystem</em> (Atari 7800)</li>
-      <li><em>px68k</em> (SHARP X68000)</li>
-      <li><em>sameboy</em> (Game Boy)</li>
-      <li><em>snes9x</em> (Super NES)</li>
-      <li><em>stella</em> (Atari 2600)</li>
-      <li><em>tgbdual</em> (Game Boy 2 players)</li>
-      <li><em>vecx</em> (Vectrex)</li>
-      <li><em>vice_x64</em> (Commodore 64)</li>
-      <li><em>vice_x128</em> (Commodore 128)</li>
-      <li><em>vice_xplus4</em> (Commodore Plus4)</li>
-      <li><em>vice_xvic</em> (Commodore VIC-20)</li>
-      <li><em>virtualjaguar</em> (Atari Jaguar)</li>
-      <li><em>xrick</em> (Rick Dangerous engine)</li>
-    </ul>
-  </div>
-  <p><strong>Optional cores :</strong></p>
-  <button class="collapsible">Expand</button>
-  <div class="content">  
-    <ul>
-      <li><em>bsnes_mercury_accuracy</em> (Super NES)</li>
-      <li><em>bsnes_mercury_balanced</em> (Super NES)</li>
-      <li><em>crocods</em> (Amstrad CPC)</li>
-      <li><em>fbalpha2012</em> (Arcade)</li>
-      <li><em>fceumm</em> (NES)</li>
-      <li><em>fmsx</em> (MSX)</li>
-      <li><em>gpsp</em> (Game Boy Advance)</li>
-      <li><em>mednafen_gba</em> (Game Boy Advance)</li>
-      <li><em>mednafen_lynx</em> (Atari Lynx)</li>
-      <li><em>mednafen_pce_fast</em> (PC Engine/Turbografx/CD)</li>
-      <li><em>melonds</em> (Nintendo DS)</li>
-      <li><em>meteor</em> (Game Boy Advance)</li>
-      <li><em>quicknes</em> (NES)</li>
-      <li><em>snes9x2002</em> (Super NES)</li>
-      <li><em>snes9x2005</em> (Super NES)</li>
-      <li><em>snes9x2010</em> (Super NES)</li>
-      <li><em>vba_next</em> (Game Boy Advance)</li>
-      <li><em>vbam</em> (Game Boy Advance)</li>
-    </ul>
+  <div class="contained">
+    <h2><strong>Emulators for iOS 11 and above !</strong></h2>
+    <p>Including the working cores and all the required files to not boot to a black screen or a crash (because of a missing BIOS file)… 😄</p>
+    <p>If you're jailbroken, just add my repo to Cydia by clicking <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://johan.margueritte.free.fr/repo">this link</a> on your jailbroken device, <em>(<a href="sileo://source/http://johan.margueritte.free.fr/repo">this link</a> for Sileo)</em> or by adding this source to Cydia : <strong>http://johan.margueritte.free.fr/repo</strong><br>
+    </p>
   </div>
   <hr>
-  <p><strong>Cores included have support for :</strong></p>
-  <button class="collapsible">Expand</button>
-  <div class="content">
-    <p><strong>Consoles :</strong></p>
-    <ul>
-      <li>3DO,</li>
-      <li>Atari 2600,</li>
-      <li>Atari 7800,</li>
-      <li>Atari Jaguar,</li>
-      <li>Atari Lynx,</li>
-      <li>Bandai WonderSwan,</li>
-      <li>ColecoVision,</li>
-      <li>Game &amp; Watch,</li>
-      <li>NEC PC Engine/Turbografx/CD,</li>
-      <li>NEC PC-FX,</li>
-      <li>Nintendo DS,</li>
-      <li>Nintendo Game Boy,</li>
-      <li>Nintendo Game Boy 2 players,</li>
-      <li>Nintendo Game Boy Advance,</li>
-      <li>Nintendo NES,</li>
-      <li>Nintendo Super NES,</li>
-      <li>Nintendo Virtual Boy,</li>
-      <li>Pokémon-Mini,</li>
-      <li>SEGA 32x,</li>
-      <li>SEGA CD,</li>
-      <li>SEGA Game Gear,</li>
-      <li>SEGA Genesis/Mega Drive,</li>
-      <li>SEGA Master System,</li>
-      <li>SEGA Saturn,</li>
-      <li>SEGA SG-1000/SC-3000/SF-7000,</li>
-      <li>Sony Playstation,</li>
-      <li>SNK NeoGeo Pocket,</li>
-      <li>Vectrex</li>
-    </ul>
-    <p><strong>Computers :</strong></p>
-    <ul>
-      <li>Amstrad CPC,</li>
-      <li>Atari ST/STE/TT/Falcon,</li>
-      <li>Commodore 64,</li>
-      <li>Commodore 128,</li>
-      <li>Commodore Plus4,</li>
-      <li>Commodore VIC-20,</li>
-      <li>MS-DOS,</li>
-      <li>MSX,</li>
-      <li>NEC PC-98,</li>
-      <li>Odyssey 2/VideoPac,</li>
-      <li>Palm OS,</li>
-      <li>SHARP X68000,</li>
-      <li>Sinclair ZX 81,</li>
-      <li>Sinclair ZX Spectrum,</li>
-      <li>Spectravideo 318/328 (SVI)</li>
-    </ul>
-    <p><strong>Arcade :</strong></p>
-    <ul>
-      <li>FinalBurn Alpha,</li>
-      <li>M.A.M.E 2003</li>
-    </ul>
-    <p><strong>Game Engines :</strong></p>
-    <ul>
-      <li>Cave Story engine,</li>
-      <li>DOOM engine,</li>
-      <li>EasyRPG/Player,</li>
-      <li>lua game framework,</li>
-      <li>Out Run engine,</li>
-      <li>Rick Dangerous engine</li>
-    </ul>
-    <p><strong>Games :</strong></p>
-    <ul>
-      <li>2048 game,</li>
-      <li>Bomberman clone</li>
-    </ul>
-    <p><strong>Multimedia :</strong></p>
-    <ul>
-      <li>Game Music Emu,</li>
-      <li>Karaoke player</li>
-    </ul>
+  <div class="contained">
+    <h3><strong>RetroArch 1.7.6 (iOS 11+)</strong> — <em>Updated v4 with a new French translation (by me !) and complete international support !</em></h3>
+    <div class="align"><a href="http://www.mediafire.com/file/zt01iifqae8fr09/RetroArch_1.7.6v4.ipa/file" target="_blank" rel="nofollow noopener"><img src="retroarch.png" width="167" height="167" alt=""/><br>
+      RetroArch 1.7.6</a><br>
+      <a href="http://www.mediafire.com/file/2tnnz6drmurcu3y/RetroArch_Optional_Cores.zip/file" target="_blank" rel="nofollow noopener">Optional Cores</a></div>
+    <p><em>I couldn&rsquo;t compile the latest versions of desmume, easyrpg, gme, lutro, mame2003 and picodrive, so older ones were used in this case…</em></p>
   </div>
   <hr>
-  <h2><strong>Extras :</strong></h2>
-  <p>I also compiled/linked some complementary emulators, as their RetroArch core counterparts are currently broken on iOS 11 (and added some retro Mac emulators in the mix…)</p>
+  <div class="contained">
+    <p><strong>Install :</strong></p>
+    <p>To install on a non-jailbroken device, use Cydia Impactor (<a href="http://www.cydiaimpactor.com/" rel="nofollow noopener">http://www.cydiaimpactor.com</a>), you may have to re-install the .ipa every week if using a free account, or every year if using a paid developer account…</p>
+    <p>To install on a jailbroken device, just add my repo to Cydia by clicking <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://johan.margueritte.free.fr/repo">this link</a> on your jailbroken device, <em>(<a href="sileo://source/http://johan.margueritte.free.fr/repo">this link</a> for Sileo)</em> or by adding this source to Cydia : <strong>http://johan.margueritte.free.fr/repo</strong><br>
+      Or you can unzip the “.ipa” file (rename to “.zip”), and install to “/Applications” via SFTP or Filza — then type “uicache” via SSH…</p>
+    <p><strong>ROMs :</strong></p>
+    <p>You can use an app like iFunBox or iExplorer to add ROMs to the app (Or Filza if you&rsquo;re jailbroken)…</p>
+    <p><em>I&rsquo;ve included the ROMs for Cave Story (NXEngine), DOOM (PrBoom), Out Run (Cannonball), Palm OS (Mu), and Rick Dangerous (xrick) inside the &ldquo;ROMs&rdquo; folder, you can use that folder as the Start folder, and add or remove contents to it directly…</em></p>
+    <p><strong>Optional Cores Install :</strong></p>
+    <p>To install the optional cores inside the app just using Cydia Impactor, you can unzip the ipa (rename it to .zip), inside the &ldquo;.app&rdquo; is a &ldquo;modules&rdquo; folder, just add the cores to this folder…</p>
+    <p>After that just make a zip of &ldquo;Payload&rdquo; and &ldquo;BundleMetadata.plist&rdquo; with your cores included, and rename it &ldquo;RetroArch 1.7.6.ipa&rdquo; !</p>
+    <p>If you&rsquo;re jailbroken, just add them via SFTP inside the &ldquo;modules&rdquo; folder in &ldquo;RetroArch.app&rdquo;…</p>
+  </div>
   <hr>
-  <h3><strong>Provenance 1.5b2770 (iOS 11+)</strong> — N64 emulator core included</h3>
-  <div class="align"><a href="http://www.mediafire.com/file/1kpv9izk9v1akzd/Provenance_1.5b_%25282770%2529.ipa/file" target="_blank" rel="nofollow noopener"><img src="provenance.png" width="167" height="167" alt=""/><br>
-    Provenance 1.5b (2770)</a><br>
-    <a href="http://www.mediafire.com/file/c2kxkgm37rdc2px/Provenance_BIOS.zip/file" target="_blank" rel="nofollow noopener">BIOS files</a></div>
-  <p><em>Now updated to the latest version, N64 is running even smoother now…</em></p>
+  <div class="contained">
+    <p><strong>Included cores :</strong></p>
+    <button class="collapsible">Expand</button>
+    <div class="content">
+      <ul>
+        <li><em>4do</em> (3DO)</li>
+        <li><em>81</em> (Sinclair ZX 81)</li>
+        <li><em>2048</em> (2048 game)</li>
+        <li><em>bluemsx</em> (MSX/SVI/ColecoVision/SG-1000)</li>
+        <li><em>bsnes_mercury_performance</em> (Super NES)</li>
+        <li><em>cannonball</em> (Out Run engine)</li>
+        <li><em>cap32</em> (Amstrad CPC)</li>
+        <li><em>desmume</em> (Nintendo DS)</li>
+        <li><em>dosbox</em> (MS-DOS)</li>
+        <li><em>easyrpg</em> (EasyRPG/Player)</li>
+        <li><em>fbalpha</em> (Arcade)</li>
+        <li><em>fuse</em> (Sinclair ZX Spectrum)</li>
+        <li><em>gambatte</em> (Game Boy)</li>
+        <li><em>genesis_plus_gx</em> (Sega 8/16 bit)</li>
+        <li><em>gme</em> (Game Music Emu)</li>
+        <li><em>gw</em> (Game &amp; Watch)</li>
+        <li><em>handy</em> (Atari Lynx)</li>
+        <li><em>hatari</em> (Atari ST/STE/TT/Falcon)</li>
+        <li><em>lutro</em> (lua game framework)</li>
+        <li><em>mame2003</em> (Arcade)</li>
+        <li><em>mednafen_ngp</em> (NeoGeo Pocket)</li>
+        <li><em>mednafen_pcfx</em> (PC-FX)</li>
+        <li><em>mednafen_psx</em> (Playstation)</li>
+        <li><em>mednafen_saturn</em> (Saturn)</li>
+        <li><em>mednafen_supergrafx</em> (PC Engine/Turbografx/CD)</li>
+        <li><em>mednafen_vb</em> (Virtual Boy)</li>
+        <li><em>mednafen_wswan</em> (WonderSwan)</li>
+        <li><em>mgba</em> (Game Boy Advance)</li>
+        <li><em>mrboom</em> (Bomberman clone)</li>
+        <li><em>mu</em> (Palm OS)</li>
+        <li><em>nestopia</em> (NES)</li>
+        <li><em>np2kai</em> (PC-98)</li>
+        <li><em>nxengine</em> (Cave Story engine)</li>
+        <li><em>o2em</em> (Odyssey 2/VideoPac)</li>
+        <li><em>pcsx_rearmed</em> (Playstation)</li>
+        <li><em>picodrive</em> (SEGA Mega Drive/Genesis/Master System/32x/CD)</li>
+        <li><em>pocketcdg</em> (Karaoke player)</li>
+        <li><em>pokemini</em> (Pokémon-Mini)</li>
+        <li><em>prboom</em> (DOOM engine)</li>
+        <li><em>prosystem</em> (Atari 7800)</li>
+        <li><em>px68k</em> (SHARP X68000)</li>
+        <li><em>sameboy</em> (Game Boy)</li>
+        <li><em>snes9x</em> (Super NES)</li>
+        <li><em>stella</em> (Atari 2600)</li>
+        <li><em>tgbdual</em> (Game Boy 2 players)</li>
+        <li><em>vecx</em> (Vectrex)</li>
+        <li><em>vice_x64</em> (Commodore 64)</li>
+        <li><em>vice_x128</em> (Commodore 128)</li>
+        <li><em>vice_xplus4</em> (Commodore Plus4)</li>
+        <li><em>vice_xvic</em> (Commodore VIC-20)</li>
+        <li><em>virtualjaguar</em> (Atari Jaguar)</li>
+        <li><em>xrick</em> (Rick Dangerous engine)</li>
+      </ul>
+    </div>
+    <p><strong>Optional cores :</strong></p>
+    <button class="collapsible">Expand</button>
+    <div class="content">  
+      <ul>
+        <li><em>bsnes_mercury_accuracy</em> (Super NES)</li>
+        <li><em>bsnes_mercury_balanced</em> (Super NES)</li>
+        <li><em>crocods</em> (Amstrad CPC)</li>
+        <li><em>fbalpha2012</em> (Arcade)</li>
+        <li><em>fceumm</em> (NES)</li>
+        <li><em>fmsx</em> (MSX)</li>
+        <li><em>gpsp</em> (Game Boy Advance)</li>
+        <li><em>mednafen_gba</em> (Game Boy Advance)</li>
+        <li><em>mednafen_lynx</em> (Atari Lynx)</li>
+        <li><em>mednafen_pce_fast</em> (PC Engine/Turbografx/CD)</li>
+        <li><em>melonds</em> (Nintendo DS)</li>
+        <li><em>meteor</em> (Game Boy Advance)</li>
+        <li><em>quicknes</em> (NES)</li>
+        <li><em>snes9x2002</em> (Super NES)</li>
+        <li><em>snes9x2005</em> (Super NES)</li>
+        <li><em>snes9x2010</em> (Super NES)</li>
+        <li><em>vba_next</em> (Game Boy Advance)</li>
+        <li><em>vbam</em> (Game Boy Advance)</li>
+      </ul>
+    </div>
+  </div>
   <hr>
-  <h3><strong>PPSSPP 1.6.3 (iOS 11+)</strong> — PSP emulator</h3>
-  <div class="align"><a href="http://www.mediafire.com/file/c9x421v624x478y/PPSSPP_1.6.3-456.ipa/file" target="_blank" rel="nofollow noopener"><img src="ppsspp.png" width="167" height="167" alt=""/><br>
-    PPSSPP 1.6.3-456</a></div>
-  <p><em>Including the latest assets, translations, and the optional extracted font from a real PSP !</em></p>
+  <div class="contained">
+    <p><strong>Cores included have support for :</strong></p>
+    <button class="collapsible">Expand</button>
+    <div class="content">
+      <p><strong>Consoles :</strong></p>
+      <ul>
+        <li>3DO,</li>
+        <li>Atari 2600,</li>
+        <li>Atari 7800,</li>
+        <li>Atari Jaguar,</li>
+        <li>Atari Lynx,</li>
+        <li>Bandai WonderSwan,</li>
+        <li>ColecoVision,</li>
+        <li>Game &amp; Watch,</li>
+        <li>NEC PC Engine/Turbografx/CD,</li>
+        <li>NEC PC-FX,</li>
+        <li>Nintendo DS,</li>
+        <li>Nintendo Game Boy,</li>
+        <li>Nintendo Game Boy 2 players,</li>
+        <li>Nintendo Game Boy Advance,</li>
+        <li>Nintendo NES,</li>
+        <li>Nintendo Super NES,</li>
+        <li>Nintendo Virtual Boy,</li>
+        <li>Pokémon-Mini,</li>
+        <li>SEGA 32x,</li>
+        <li>SEGA CD,</li>
+        <li>SEGA Game Gear,</li>
+        <li>SEGA Genesis/Mega Drive,</li>
+        <li>SEGA Master System,</li>
+        <li>SEGA Saturn,</li>
+        <li>SEGA SG-1000/SC-3000/SF-7000,</li>
+        <li>Sony Playstation,</li>
+        <li>SNK NeoGeo Pocket,</li>
+        <li>Vectrex</li>
+      </ul>
+      <p><strong>Computers :</strong></p>
+      <ul>
+        <li>Amstrad CPC,</li>
+        <li>Atari ST/STE/TT/Falcon,</li>
+        <li>Commodore 64,</li>
+        <li>Commodore 128,</li>
+        <li>Commodore Plus4,</li>
+        <li>Commodore VIC-20,</li>
+        <li>MS-DOS,</li>
+        <li>MSX,</li>
+        <li>NEC PC-98,</li>
+        <li>Odyssey 2/VideoPac,</li>
+        <li>Palm OS,</li>
+        <li>SHARP X68000,</li>
+        <li>Sinclair ZX 81,</li>
+        <li>Sinclair ZX Spectrum,</li>
+        <li>Spectravideo 318/328 (SVI)</li>
+      </ul>
+      <p><strong>Arcade :</strong></p>
+      <ul>
+        <li>FinalBurn Alpha,</li>
+        <li>M.A.M.E 2003</li>
+      </ul>
+      <p><strong>Game Engines :</strong></p>
+      <ul>
+        <li>Cave Story engine,</li>
+        <li>DOOM engine,</li>
+        <li>EasyRPG/Player,</li>
+        <li>lua game framework,</li>
+        <li>Out Run engine,</li>
+        <li>Rick Dangerous engine</li>
+      </ul>
+      <p><strong>Games :</strong></p>
+      <ul>
+        <li>2048 game,</li>
+        <li>Bomberman clone</li>
+      </ul>
+      <p><strong>Multimedia :</strong></p>
+      <ul>
+        <li>Game Music Emu,</li>
+        <li>Karaoke player</li>
+      </ul>
+    </div>
+  </div>
   <hr>
-  <h3><strong>YabaSanshiro (uoYabause) 1.8.1 (iOS 11+)</strong> — SEGA Saturn emulator</h3>
-  <div class="align"><a href="http://www.mediafire.com/file/aaua3tf7jcd4bpm/YabaSanshiro_%2528uoYabause%2529_1.8.1.ipa/file" target="_blank" rel="nofollow noopener"><img src="yabasanshiro.png" width="167" height="167" alt=""/><br>
-    YabaSanshiro (uoYabause) 1.8.1</a><br>
-    <a href="http://www.mediafire.com/file/uohqu9cv7cb06l8/YabaSanshiro_BIOS.zip/file" target="_blank" rel="nofollow noopener">BIOS</a></div>
-  <p><em>Ads removed in this version !</em></p>
+  <div class="contained">
+    <h2><strong>Extras :</strong></h2>
+    <p>I also compiled/linked some complementary emulators, as their RetroArch core counterparts are currently broken on iOS 11 (and added some retro Mac emulators in the mix…)</p>
+  </div>
   <hr>
-  <h3><strong>ScummVM 2.1.0 (iOS 11+)</strong> — Point &amp; Click games engine</h3>
-  <div class="align"><a href="http://www.mediafire.com/file/3xzii5tyet9ic34/ScummVM_2.1.0.ipa/file" target="_blank" rel="nofollow noopener"><img src="scummvm.png" width="167" height="167" alt=""/><br>
-    ScummVM 2.1.0</a><br>
-    <a href="http://www.mediafire.com/file/85afoq944nezk1q/ScummVM_Extras.zip/file" target="_blank" rel="nofollow noopener">Extras ScummVM</a></div>
-  <p><em>Included is the arrows on the keyboard fix, and the mt32 emulator which seems to work fine on iOS now…</em></p>
-  <p><em>iOS keyboard lacks arrow keys, which are used for some games… The fix remaps these to unused symbols ( ] = Up, \ = Down, _ = Left and | = Right) — this makes games such as SQ2 playable !</em></p>
+  <div class="contained">
+    <h3><strong>Provenance 1.5b2770 (iOS 11+)</strong> — <em>N64 emulator core included</em></h3>
+    <div class="align"><a href="http://www.mediafire.com/file/1kpv9izk9v1akzd/Provenance_1.5b_%25282770%2529.ipa/file" target="_blank" rel="nofollow noopener"><img src="provenance.png" width="167" height="167" alt=""/><br>
+      Provenance 1.5b (2770)</a><br>
+      <a href="http://www.mediafire.com/file/c2kxkgm37rdc2px/Provenance_BIOS.zip/file" target="_blank" rel="nofollow noopener">BIOS files</a></div>
+    <p><em>Now updated to the latest version, N64 is running even smoother now…</em></p>
+  </div>
   <hr>
-  <h3><strong>iDOS 2 1.4.1 (iOS 11+)</strong> — PC DOS emulator</h3>
-  <div class="align"><a href="http://www.mediafire.com/file/4lf4w9jbc65lqzp/iDOS_2_1.4.1.ipa/file" target="_blank" rel="nofollow noopener"><img src="idos.png" width="167" height="167" alt=""/><br>
-    iDOS 2 1.4.1</a></div>
-  <p><em>It&rsquo;s a new version including fixes for the layout on the iPad Pro and iPhone X</em></p>
+  <div class="contained">
+    <h3><strong>PPSSPP 1.6.3 (iOS 11+)</strong> — PSP emulator</h3>
+    <div class="align"><a href="http://www.mediafire.com/file/c9x421v624x478y/PPSSPP_1.6.3-456.ipa/file" target="_blank" rel="nofollow noopener"><img src="ppsspp.png" width="167" height="167" alt=""/><br>
+      PPSSPP 1.6.3-456</a></div>
+    <p><em>Including the latest assets, translations, and the optional extracted font from a real PSP !</em></p>
+  </div>
   <hr>
-  <h3><strong>Mini vMac 2.3 (iOS 11+)</strong> — Mac 68k emulator (Mac OS 1.1 - 7.5.5)</h3>
-  <div class="align"><a href="http://www.mediafire.com/file/rtodn2ryv5n1fsm/Mini_vMac_2.3.ipa/file" target="_blank" rel="nofollow noopener"><img src="minivmac.png" width="167" height="167" alt=""/><br>
-    Mini vMac 2.3</a><br>
-    <a href="http://www.mediafire.com/file/ynd14dr36hcfl4r/vMac_BIOS.zip/file" target="_blank" rel="nofollow noopener">BIOS</a></div>
+  <div class="contained">
+    <h3><strong>YabaSanshiro (uoYabause) 1.8.1 (iOS 11+)</strong> — <em>SEGA Saturn emulator</em></h3>
+    <div class="align"><a href="http://www.mediafire.com/file/aaua3tf7jcd4bpm/YabaSanshiro_%2528uoYabause%2529_1.8.1.ipa/file" target="_blank" rel="nofollow noopener"><img src="yabasanshiro.png" width="167" height="167" alt=""/><br>
+      YabaSanshiro (uoYabause) 1.8.1</a><br>
+      <a href="http://www.mediafire.com/file/uohqu9cv7cb06l8/YabaSanshiro_BIOS.zip/file" target="_blank" rel="nofollow noopener">BIOS</a></div>
+    <p><em>Ads removed in this version !</em></p>
+  </div>
   <hr>
-  <h3><strong>BasiliskII 10/01/2018 (iOS 11+)</strong> — Mac 68k emulator (Mac OS 7.0 - 8.1)</h3>
-  <div class="align"><a href="http://www.mediafire.com/file/1tdyozg4egjg5ai/BasiliskII_2018.10.01.ipa/file" target="_blank" rel="nofollow noopener"><img src="basiliskii.png" width="167" height="167" alt=""/><br>
-    BasiliskII 2018/10/01</a><br>
-    <a href="http://www.mediafire.com/file/rpofx65za0wbooi/BasiliskII_BIOS.zip/file" target="_blank" rel="nofollow noopener">BIOS</a></div>
-  <p><em>New version with a fix for iOS 12</em></p>
+  <div class="contained">
+    <h3><strong>ScummVM 2.1.0 (iOS 11+)</strong> — <em>Point &amp; Click games engine</em></h3>
+    <div class="align"><a href="http://www.mediafire.com/file/3xzii5tyet9ic34/ScummVM_2.1.0.ipa/file" target="_blank" rel="nofollow noopener"><img src="scummvm.png" width="167" height="167" alt=""/><br>
+      ScummVM 2.1.0</a><br>
+      <a href="http://www.mediafire.com/file/85afoq944nezk1q/ScummVM_Extras.zip/file" target="_blank" rel="nofollow noopener">Extras ScummVM</a></div>
+    <p><em>Included is the arrows on the keyboard fix, and the mt32 emulator which seems to work fine on iOS now…</em></p>
+    <p><em>iOS keyboard lacks arrow keys, which are used for some games… The fix remaps these to unused symbols ( ] = Up, \ = Down, _ = Left and | = Right) — this makes games such as SQ2 playable !</em></p>
+  </div>
   <hr>
-  <p><em>Everything on this list is already code-signed so you don&rsquo;t have to worry about signing again if you&rsquo;re jailbroken… If not, Cydia Impactor will re-sign everything for you !</em></p>
+  <div class="contained">
+    <h3><strong>iDOS 2 1.4.1 (iOS 11+)</strong> — <em>PC DOS emulator</em></h3>
+    <div class="align"><a href="http://www.mediafire.com/file/4lf4w9jbc65lqzp/iDOS_2_1.4.1.ipa/file" target="_blank" rel="nofollow noopener"><img src="idos.png" width="167" height="167" alt=""/><br>
+      iDOS 2 1.4.1</a></div>
+    <p><em>It&rsquo;s a new version including fixes for the layout on the iPad Pro and iPhone X</em></p>
+  </div>
+  <hr>
+  <div class="contained">
+    <h3><strong>Mini vMac 2.3 (iOS 11+)</strong> — <em>Mac 68k emulator (Mac OS 1.1 - 7.5.5)</em></h3>
+    <div class="align"><a href="http://www.mediafire.com/file/rtodn2ryv5n1fsm/Mini_vMac_2.3.ipa/file" target="_blank" rel="nofollow noopener"><img src="minivmac.png" width="167" height="167" alt=""/><br>
+      Mini vMac 2.3</a><br>
+      <a href="http://www.mediafire.com/file/ynd14dr36hcfl4r/vMac_BIOS.zip/file" target="_blank" rel="nofollow noopener">BIOS</a></div>
+  </div>
+  <hr>
+  <div class="contained">
+    <h3><strong>BasiliskII 10/01/2018 (iOS 11+)</strong> — <em>Mac 68k emulator (Mac OS 7.0 - 8.1)</em></h3>
+    <div class="align"><a href="http://www.mediafire.com/file/1tdyozg4egjg5ai/BasiliskII_2018.10.01.ipa/file" target="_blank" rel="nofollow noopener"><img src="basiliskii.png" width="167" height="167" alt=""/><br>
+      BasiliskII 2018/10/01</a><br>
+      <a href="http://www.mediafire.com/file/rpofx65za0wbooi/BasiliskII_BIOS.zip/file" target="_blank" rel="nofollow noopener">BIOS</a></div>
+    <p><em>New version with a fix for iOS 12</em></p>
+  </div>
+  <hr>
+  <div class="contained">
+    <p><em>Everything on this list is already code-signed so you don&rsquo;t have to worry about signing again if you&rsquo;re jailbroken… If not, Cydia Impactor will re-sign everything for you !</em><br>
+      <br>
+    </p>
+  </div>
 </div>
 <script>
 var coll = document.getElementsByClassName("collapsible");
