@@ -1,4 +1,4 @@
 # iOS-Emu
-iOS Emulators (iOS 11+)
+iOS Emulators
 
 https://weedyweedsmoker.github.io/iOS-Emu/
